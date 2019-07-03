@@ -27,6 +27,30 @@ namespace StudentExercises
                 exerciseLanguage = "C#"
             };
 
+            Exercises overlyExcited = new Exercises() {
+                Id = 4,
+                exerciseName = "Overly Excited",
+                exerciseLanguage = "Javascript"
+            };
+
+            Exercises solarSystem = new Exercises() {
+                Id = 5,
+                exerciseName = "Solar System",
+                exerciseLanguage = "Javascript"
+            };
+
+            Exercises carLot = new Exercises() {
+                Id = 6,
+                exerciseName = "Car Lot",
+                exerciseLanguage = "Javascript"
+            };
+
+            Exercises dynamicCards = new Exercises() {
+                Id = 7,
+                exerciseName = "Dynamic Cards",
+                exerciseLanguage = "Javascriipt"
+            };
+
             // Creating students
 
             Student Ronald = new Student() {
@@ -46,6 +70,8 @@ namespace StudentExercises
                 lastName = "Granger",
                 SlackHandle = "@Ravenclaw"
             };
+
+            // Creating Instructors
 
             Instructor McGonagall = new Instructor() {
                 IFirstName = "Minerva",
@@ -68,6 +94,36 @@ namespace StudentExercises
                 Specialty = "Lying"
             };
 
+            Instructor Trelawney = new Instructor() {
+                IFirstName = "Sybil",
+                ILastName = "Trelawney",
+                ISlackHandle = "@SpookyLady",
+                Specialty = "Crystal balls"
+            };
+
+            Instructor Hagrid = new Instructor() {
+                IFirstName = "Rubeus",
+                ILastName = "Hagrid",
+                ISlackHandle = "@BestBoy",
+                Specialty = "Being the most wonderful"
+            };
+
+            Instructor Lupin = new Instructor() {
+                IFirstName = "Remus",
+                ILastName = "Lupin",
+                ISlackHandle = "@HowlattheMoon",
+                Specialty = "Maybe being a werewolf you don't know"
+            };
+
+            Instructor Sprout = new Instructor() {
+                IFirstName = "Pomona",
+                ILastName = "Sprout",
+                ISlackHandle = "@ALittleMugwort",
+                Specialty = "p l a n t s  a r e  l i f e"
+            };
+
+
+
             // When a new cohort is created, it's a new list
 
             Cohorts c31 = new Cohorts() {
@@ -78,6 +134,11 @@ namespace StudentExercises
             Cohorts c32 = new Cohorts() {
                 Id = 2, 
                 CohortName = "Doesn't Matter Not 31"
+            };
+
+            Cohorts c33 = new Cohorts() {
+                Id = 3,
+                CohortName = "Still Doesn't Matter Not 31"
             };
 
 
@@ -150,6 +211,39 @@ namespace StudentExercises
             foreach(Student student in lists.Students) {
                 Console.WriteLine(student.firstName);
             }
+
+            List<Student> newStudents = new List<Student> () {
+                Luna,
+                Neville,
+                Fred,
+                George
+            };
+
+            List<Exercises> newExercises = new List<Exercises> () {
+                lists,
+                dictionaries,
+                classes,
+                overlyExcited,
+                solarSystem,
+                carLot,
+                dynamicCards
+            };
+
+            List<Instructor> newInstructors = new List<Instructor> () {
+                Trelawney, 
+                Pomfrey, 
+                Sprout, 
+                Lupin
+            };
+
+            List<Cohorts> newCohorts = new List<Cohorts> () {
+                c34,
+                c35,
+                c36,
+                c37
+            };
+
+            IEnumerable<string> allJavascriptExercises = from count in newExercises
         }
     }
 }
